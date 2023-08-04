@@ -1,0 +1,174 @@
+/* NAVIGATIION BAR */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: black;
+    height: 63px;
+    top: 0px;
+    width: 100vw;
+}
+
+.logo {
+    width: 159px;
+    height: 54px;
+    align-self: center;
+}
+
+.bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SEARCH BAR */
+.drop-down {
+    width: 35px;
+    height: 42px;
+    margin-right: -11px;
+    margin-left: 44px;
+    font-family: cursive;
+
+}
+
+.search {
+    width: 452px;
+    height: 38px;
+    margin: 0px 4px;
+}
+
+.button {
+    width: 80px;
+    height: 42px;
+    margin: 3px 4px;
+    font-family: cursive;
+    background-color: #f2941b;
+}
+
+.cart {
+    width: 80px;
+    height: 42px;
+    margin: 5px -1px;
+    border: white;
+    color: white;
+    /* margin: 0px 50px; */
+}
+
+.search-button {
+    margin-left: -6px;
+    width: 55px;
+    height: 42px;
+    font-family: cursive;
+    background-color: #f2941b;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    margin: 21px 0px;
+}
+
+li {
+    margin: 0px 33px;
+    list-style: none;
+
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-family: cursive;
+}
+
+ul :hover {
+    background-color: rgb(241, 147, 26);
+    ;
+    border-radius: 2px;
+}
+
+/* SLIDER */
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 63px;
+
+}
+
+.slider img {
+    height: 361px;
+    width: 100vw;
+
+}
+
+
+/* CONTAINER */
+.container {
+    background-color: #00f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARDS */
+.card {
+    display: inline-flex;
+    width: 284px;
+    background-color: #ff9f24db;
+    padding: 24px 25px;
+    gap: 12px;
+    flex-direction: column;
+    border-radius: 14px;
+    animation: flip 1s 1 3s reverse;
+}
+
+.container img:hover {
+    animation: flip 1s 1 reverse;
+}
+
+.card-items {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-left: -14px;
+}
+
+
+/* USE FOR ALL */
+.head-text a {
+    color: white;
+    margin: 17px 29px;
+}
+
+.head-text {
+    margin: 11px -22px 0px 28px;
+}
+
+.text-align {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ANIMATIONS */
+@keyframes flip {
+    from {
+
+        transform: scaleX(1);
+    }
+
+    to {
+
+        transform: scaleX(-1)
+    }
+}
